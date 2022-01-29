@@ -17,12 +17,9 @@ element.addEventListener("submit", (e) => {
 // removeLi
 let removeElement = document.getElementById("items");
 removeElement.addEventListener("click", (e) => {
-	e.preventDefault();
 	if (e.target.classList.contains("delete")) {
-		if (confirm("Are u sure want to delete This")) {
-			deletedElement = e.target.parentElement;
-			removeElement.removeChild(deletedElement);
-		}
+		deletedElement = e.target.parentElement;
+		removeElement.removeChild(deletedElement);
 	}
 });
 
